@@ -35,16 +35,50 @@
               <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#about">Le projet</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#portfolio">Modules d'exploration</a>
+              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#datasets">Données</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#contact">Développement</a>
+              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#portfolio">Fonctionnalités</a>
             </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#uses">Usages</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-md-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#documentation">Publications</a>
+            </li>
+            <!-- <li>
+              <div id="btn-group-lang" class="btn-group" style="float:right;margin-top:7px;" ;="">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a id="lang1">Europe</a></li>
+                    <li><a id="lang2">France</a></li>
+                </ul>
+              </div>
+            </li> -->
             <li class="mx-0 mx-lg-1">
-              <a class="btn btn-success py-2 px-0 px-lg-2 rounded" href="https://mthh.github.io/regioviz/build/">
-                <i class="fa fa-area-chart mr-3"></i>
-                  Démarrer
-              </a>
+              <div id="btn-group-lang" class="btn-group">
+                <!-- <a class="btn btn-success py-2 px-0 px-lg-2 rounded" href="https://mthh.github.io/regioviz/build/">
+                  <i class="fa fa-area-chart mr-3"></i>
+                    Démarrer
+                </a> -->
+                <button type="button" class="btn btn-success py-2 px-0 px-lg-2 rounded dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-area-chart mr-3"></i>
+                    <span >Démarrer</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu btn-success" role="menu" style="margin: 0px !important; padding: 0px !important; background-color: #28a745;">
+                    <li style="width: 100%;" class="btn-success py-2 px-0 px-lg-2 rounded" >
+                      <i class="fa fa-check px-3" aria-hidden="true"></i>
+                      <a class="start_link" href="https://mthh.github.io/regioviz/build/" target="_blank" id="start_data_europe">Europe</a>
+                    </li>
+                    <li style="width: 100%;" class="btn-success py-2 px-0 px-lg-2 rounded" >
+                      <i class="fa fa-check px-3" aria-hidden="true"></i>
+                      <a class="start_link" href="https://mthh.github.io/rgvzfra/build/" target="_blank" id="start_data_france">France</a>
+                    </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -62,25 +96,25 @@
     </header>
 
     <!-- About Section -->
-    <section class="mb-0" id="about">
+    <section class="mb-0 text-secondary" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary">Le projet</h2>
+        <h2 class="text-center text-uppercase">Le projet</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-6 mr-auto text-justify">
-            <h5 class="text-secondary text-center">Visualisation et comparaison régionale</h5>
+            <h5 class="text-center">Visualisation et comparaison régionale</h5>
             <p class="py-3">Regioviz propose d'associer représentations graphiques et cartographiques interactives pour apporter des éléments de cadrage sur la situation statistique de "mon territoire" au regard de différents espaces de référence.</p>
           </div>
           <div class="col-lg-6 mr-auto text-justify">
-            <h5 class="text-secondary text-center">Un projet du RIATE</h5>
+            <h5 class="text-center">Un projet du RIATE</h5>
             <p class="py-3">Le projet est développé et maintenu par les membres du <a href="http://cnrs.riate.fr">RIATE</a>. Le développement initial (2018) répond à une demande issue du <a href="http://www.cget.gouv.fr/">Commissariat Général à l'Égalité des Territoires</a> afin de situer et comparer les nouvelles régions françaises en Europe à partir d'indicateurs clés pour le suivi des politiques européennes. Un premier prototype a été délivré en mars 2018 et l’équipe a depuis travaillé à l’amélioration de certaines fonctions d’analyse ainsi qu’à l’extension du  projet à de nouveaux espaces d’étude, comme la France.</p>
           </div>
           <div class="col-lg-6 mx-auto text-justify">
-            <h5 class="text-secondary text-center">Facilité de prise en main</h5>
+            <h5 class="text-center">Facilité de prise en main</h5>
             <p class="py-3">Cet outil d'exploration statistique a l'ambition d'être compréhensible et utilisable par des non-experts en manipulation et visualisation de données. Une attention particulière a été apportée à l'ergonomie générale de l'application, à la clarté des modules d'exploration et à l'inclusion d'aides à l'interprétation.</p>
           </div>
           <div class="col-lg-6 mx-auto text-justify">
-            <h5 class="text-secondary text-center">Pistes d'exploration multiples</h5>
+            <h5 class="text-center">Pistes d'exploration multiples</h5>
             <p class="py-3">L'utilisateur est libre de choisir ses indicateurs, ses espaces d'étude (ensemble des régions ou régions de taille démographique semblable par exemple), son maillage territorial pour mieux contextualiser la situation statistique de son territoire.</p>
           </div>
         </div>
@@ -88,24 +122,33 @@
     </section>
 
     <!-- Dataset Section -->
-    <section class="mb-0 bg-primary text-white" id="about">
+    <section class="mb-0 bg-primary text-white" id="datasets">
       <div class="container">
         <h2 class="text-center text-uppercase">Les jeux de données</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-6 mr-auto text-justify">
             <h5 class="text-white text-center">Régions françaises en Europe (Avril 2018)</h5>
-            <p class="py-3"><i><b>Regioviz - Europe</b></i> correspond à la version initiale de l’application commandée par le CGET et vise à positionner et comparer les nouvelles régions françaises dans un contexte européen. La définition des indicateurs et des mailles territoriales d’analyses repose sur des échanges avec les SGAR au regard de leur besoin d’observation territoriale dans un contexte européen. Cette version de Regioviz propose 25 indicateurs issus d’Eurostat. Ces indicateurs sont structurés en 3 thèmes : structures sociales, structures économiques et structures démographiques. Trois maillages territoriaux d’analyse sont disponibles : NUTS1, NUTS2 et la maille infra nationale de décision, qui correspond à un mélange de NUTS1 et NUTS2. Le fichier de données ayant servi à alimenter l’application est disponible <a href"#">ici</a>.</p>
-            <div class="text-center">
+
+            <p class="py-3">
+              <a href="https://mthh.github.io/regioviz/build/" target="_blank" id="start_data_europe">
+                <img class="img-dataset" align="left" src="img/dataset_europe.png" hspace="10" vspace="5" alt="">
+              </a>
+              <i><b>Regioviz - Europe</b></i> correspond à la version initiale de l’application commandée par le CGET et vise à positionner et comparer les nouvelles régions françaises dans un contexte européen. La définition des indicateurs et des mailles territoriales d’analyses repose sur des échanges avec les SGAR au regard de leur besoin d’observation territoriale dans un contexte européen. Cette version de Regioviz propose 25 indicateurs issus d’Eurostat. Ces indicateurs sont structurés en 3 thèmes : structures sociales, structures économiques et structures démographiques. Trois maillages territoriaux d’analyse sont disponibles : NUTS1, NUTS2 et la maille infra nationale de décision, qui correspond à un mélange de NUTS1 et NUTS2. Le fichier de données ayant servi à alimenter l’application est disponible <a href"#">ici</a>.</p>
+            <!-- <div class="text-center">
               <img class="img-dataset" src="img/dataset_europe.png" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="col-lg-6 mx-auto text-justify">
             <h5 class="text-white text-center">France (Juin 2018)</h5>
-            <p class="py-3"><i><b>Regioviz - France</b></i> propose 29 indicateurs (en 2014) issus de l’INSEE. Ces indicateurs sont structurés en cinq thèmes : chômage / niveau de vie, structure de l’emploi, diplômes – formation, structures démographiques et logement. Les données sont proposées dans cinq maillages territoriaux et zonages d’étude : les zones d’emploi, les bassins de vie, les EPCI, les aires urbaines et les unités urbaines.</p>
-            <div class="text-center">
+            <p class="py-3">
+              <a href="https://mthh.github.io/rgvzfra/build/" target="_blank" id="start_data_france">
+                <img class="img-dataset" src="img/dataset_france.png" hspace="10" vspace="5" align="right" alt="">
+              </a>
+              <i><b>Regioviz - France</b></i> propose 29 indicateurs (en 2014) issus de l’INSEE. Ces indicateurs sont structurés en cinq thèmes : chômage / niveau de vie, structure de l’emploi, diplômes – formation, structures démographiques et logement. Les données sont proposées dans cinq maillages territoriaux et zonages d’étude : les zones d’emploi, les bassins de vie, les EPCI, les aires urbaines et les unités urbaines.</p>
+            <!-- <div class="text-center">
               <img class="img-dataset" src="img/dataset_france.png" alt="">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -135,7 +178,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/d.png" alt="">
+              <img class="img-fluid" src="img/portfolio/d3.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4 text-center">
@@ -145,7 +188,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/e.png" alt="">
+              <img class="img-fluid" src="img/portfolio/e3.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4 text-center">
@@ -175,18 +218,18 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/f.png" alt="">
+              <img class="img-fluid" src="img/portfolio/f3.png" alt="">
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="mb-0 bg-primary text-white" id="contact">
+    <!-- Uses & dev Section -->
+    <section class="mb-0 bg-primary text-white" id="uses">
       <div class="container">
         <h2 class="text-center text-uppercase mb-0">Utilisation et développement</h2>
-        <hr class="star-dark mb-5">
+        <hr class="star-light mb-5">
         <div class="row">
         </div>
         <div class="row">
@@ -207,24 +250,26 @@
     </section>
 
     <!-- Dataset Section -->
-    <section class="mb-0" id="about">
+    <section class="mb-0 text-secondary" id="documentation">
       <div class="container">
         <h2 class="text-center text-uppercase">Documentation et publications autour de Regioviz</h2>
-        <hr class="star-light mb-5">
+        <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-lg-10 mr-auto text-justify">
-            <p class="py-3">Le rapport principal, associé à la livraison de Regioviz pour le CGET, rappelle le contexte de production de l’application et présente dans le détail les fonctionnalités de Regioviz. <a href="">Lien de téléchargement</a></p>
-            <p class="py-3">La fiche de synthèse, associée au rapport principal, résume dans les grandes lignes le projet Regioviz dans un document synthétique. <a href="">Lien de téléchargement</a></p>
-            <p class="py-3"><a href="">Scénario d’utilisation # 1</a> – Position de la région Bretagne sur le critère de PIB par habitant</p>
-            <p class="py-3"><a href="">Scénario d’utilisation # 2</a> – Contextualiser le niveau de PIB par habitant de lra région Bourgogne-Franche-Comté au sein de l’Union Européenne</p>
-            <p class="py-3"><a href="">Scénario d’utilisation # 3</a> – Chômage et Recherche & développement en Occitanie. </p>
-            <p class="py-3"><a href="">Scénario d’utilisation # 4</a> – Les situations sur le marché de l’emploi pour la région Grand Est et ses voisines frontalières, des complémentarités potentielles ? </p>
-            <p class="py-3"><a href="">Scénario d’utilisation # 5</a> – Emploi et innovation en région Auvergne-Rhône-Alpes : quelles ressemblances avec les autres régions européennes ? </p>
+          <div class="col-lg-8 mx-auto text-justify">
+            <ul>
+              <li class="py-1">Le rapport principal, associé à la livraison de Regioviz pour le CGET, rappelle le contexte de production de l’application et présente dans le détail les fonctionnalités de Regioviz.<br><a href="">Lien de téléchargement</a></li>
+              <li class="py-1">La fiche de synthèse, associée au rapport principal, résume dans les grandes lignes le projet Regioviz dans un document synthétique.<br><a href="">Lien de téléchargement</a></li>
+              <hr>
+              <li class="py-1"><a href="">Scénario d’utilisation # 1</a> – Position de la région Bretagne sur le critère de PIB par habitant</li>
+              <li class="py-1"><a href="">Scénario d’utilisation # 2</a> – Contextualiser le niveau de PIB par habitant de lra région Bourgogne-Franche-Comté au sein de l’Union Européenne</li>
+              <li class="py-1"><a href="">Scénario d’utilisation # 3</a> – Chômage et Recherche & développement en Occitanie. </li>
+              <li class="py-1"><a href="">Scénario d’utilisation # 4</a> – Les situations sur le marché de l’emploi pour la région Grand Est et ses voisines frontalières, des complémentarités potentielles ? </li>
+              <li class="py-1"><a href="">Scénario d’utilisation # 5</a> – Emploi et innovation en région Auvergne-Rhône-Alpes : quelles ressemblances avec les autres régions européennes ? </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="footer text-center">
@@ -274,7 +319,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Position - 1 indicateur</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/a3.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/a_big.png" alt="">
               <p class="mb-5">Ce module d'exploration centré autour d'un diagramme en bâtons permet de comparer la position de la région d'intérêt à partir d'un indicateur unique.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -296,7 +341,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Position - 2 indicateurs</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/d.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/d_big.png" alt="">
               <p class="mb-5">Ce graphique bidimensionnel organisé en cadrans (valeur de la moyenne / médiane de l'espace d'étude) permet de comparer la position des régions en fonction de deux indicateurs.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -318,7 +363,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Position - 3 indicateurs et plus</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/e.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/e_big.png" height="300" alt="">
               <p class="mb-5">Le module d'exploration en radar rend possible la comparaison d'une région au regard d'ensembles de référence pour 3 à 7 indicateurs.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -340,7 +385,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Ressemblance - distance globale</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/c3.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/c_big.png" alt="">
               <p class="mb-5">Les graphiques de ressemblance permettent d'identifier les régions qui ressemblent le plus à "ma région" d'analyse.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -362,7 +407,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Ressemblance - distance par indicateur</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/b3.png" alt="">
+              <img class="img-fluid mb-5" src="img/portfolio/b_big.png" alt="">
               <p class="mb-5">Les graphiques de ressemblance permettent de visualiser les régions qui ressemblent le plus à "ma région" d'analyse.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>

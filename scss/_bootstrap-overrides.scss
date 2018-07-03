@@ -8,6 +8,14 @@ a {
   }
 }
 
+.text-white a {
+  color: #b4b4b4;
+  &:focus,
+  &:hover,
+  &:active {
+    color: darken(#b4b4b4, 10%);
+  }
+}
 .btn {
   border-width: 2px;
 }

@@ -11,6 +11,7 @@
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
+        font-size: 0.9em;
         color: $white;
         &:hover {
           color: $primary;
@@ -28,6 +29,18 @@
   .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem;
+  }
+  a.start_link {
+    color: $white;
+    font-size: 0.9em;
+    &:hover {
+      color: $white;
+    }
+    &:active,
+    &:focus {
+      color: $white;
+    }
+
   }
 }
 @media(min-width:992px) {
