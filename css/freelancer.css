@@ -105,6 +105,20 @@ section h2 {
   margin-left: 5px;
 }
 
+.img-dl-link {
+  max-height: 200px !important;
+  width: auto !important;
+  box-shadow: 0 0 5px 0 rgba(63, 31, 0, 0.5);
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.img-dl-link:hover {
+  -webkit-transform: rotate(-10deg) scale(2);
+  transform: rotate(-10deg) scale(2);
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;

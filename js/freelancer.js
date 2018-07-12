@@ -54,7 +54,10 @@
     type: 'inline',
     preloader: false,
     focus: '#username',
-    modal: true
+    closeOnContentClick: false,
+    closeOnBgClick: true,
+    showCloseBtn: true,
+    enableEscapeKey: true,
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
